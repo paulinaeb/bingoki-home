@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingoki | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="media.css"/>
+</head>
+<body>
+    <!-- menu - cabecera -->
+    <header> 
+        <a href="">
+            <img class="logo" src="./assets/logo.png" alt="logo Bingoki"/> 
+        </a>
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Bingoki</a></li>
+                <li><a href="">Apuéstale</a></li>
+                <li><a href="">Juégalu</a></li>
+                <li><a href="">Ganadores</a></li>
+                <li><a href="">Verificador</a></li>
+                <li><a href="">Ptos Venta</a></li>
+            </ul>
+        </nav>
+        <div>
+        <a href="">
+            <img class="icons" src="./assets/carrito.png" alt="carrito de compras"/>
+        </a>
+        <a href="">
+            <img class="icons" src="./assets/login.png" alt="login icono"/>
+        </div>
+        </a>
+    </header>
+    <!-- slider -->
+    <section class="slider">
+        <div class="slideshow-container">
+          <div class="mySlides fade my1">
+            <img id="img1" class="slide-img" src="./assets/winners.png" />
+            <div class="title text">¿Cómo Jugar?</div>
+            <div class="text desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quibusdam perferendis dignissimos. Similique autem dicta quisquam, molestias vel illum dignissimos optio voluptatibus aspernatur esse delectus accusamus quod atque! Quidem, voluptates!</div>
+            <a href=""><button class="button button-izq">Juega aquí</button></a>
+        </div>
+        <div class="mySlides fade lottery">
+            <img id="img2" class="slide-img" src="./assets/lottery.png" />
+            <div class="title text2">Más Información</div>
+            <div class="text2 desc2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quibusdam perferendis dignissimos. Similique autem dicta quisquam, molestias vel illum dignissimos optio voluptatibus aspernatur esse delectus accusamus quod atque! Quidem, voluptates!</div>
+            <button class="button button-der">Leer más</button>
+        </div>
+        <div class="mySlides fade jackpot">
+            <img id="img3" class="slide-img" src="./assets/jackpot.png" />
+            <div class="title text">Regístrate</div>
+            <div class="text desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quibusdam perferendis dignissimos. Similique autem dicta quisquam, molestias vel illum dignissimos optio voluptatibus aspernatur esse delectus accusamus quod atque! Quidem, voluptates!</div>
+            <button class="button button-izq">Regístrate</button>
+        </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div> 
+        <div class="dots" style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+      <script defer src="functions.js"></script>
+</body>
+</html>
