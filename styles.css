@@ -375,3 +375,56 @@ header .icons{
   .active, .dot2:hover {
     background-color: #717171;
   }
+
+  /* cruz de la suerte */
+
+  .cruz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    height: fit-content;
+    margin-left: 60px;
+    margin-top: -35px;
+    text-align: center;
+  }
+  .cruz-title{
+    font-size: 2.2rem;
+  }
+
+  .cruz-box{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 217px;
+    height: 197px;
+    background: var(--transparent-color);
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+  }
+
+  .number{ 
+    background-color: var(--yellow);
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--black);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  .columna{ 
+    margin-top: 20px;
+  }
+
+  .two{
+    margin-top: 80px;
+  }
+
+  .fila{
+    display: flex;
+    flex-direction: row;
+    margin-top: -105px;
+  }
