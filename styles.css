@@ -8,6 +8,9 @@
     --black: #000;
     --white: #FFF;
     --green: #78EEA0;
+    --transparent-color:rgba(0, 0, 0, 0.22);
+    --shadow:0px 4px 4px rgba(0, 0, 0, 0.35);
+    --text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 *{
@@ -70,7 +73,7 @@ header .icons{
     margin-right: 15px;
 }
 /* section de slider */
-section {
+.slider {
     height: fit-content;
     width: 100%; 
   }
@@ -243,4 +246,132 @@ section {
     to {
       opacity: 1;
     }
+  }
+
+  /* section info premios, cruz, figura y stream */
+  .info-bingo{
+    height: 590px;
+    width: 100%;
+    margin-top: 6.5px; 
+    padding: 10px;
+    background: linear-gradient(268.42deg, rgba(72, 1, 255, 0.73) 0%, rgba(33, 150, 243, 0.73) 99.99%, rgba(33, 150, 243, 0.73) 100%);
+  }
+
+  .premios{
+    width: 617px;
+    height: 176px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    background: var(--transparent-color);
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+  }
+
+  .texto-premios{
+    position: relative; 
+    width: 60%;
+    height: 176px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;  
+    
+  }
+ 
+  .titles{
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 30px;
+    color:#FFF;
+    text-shadow: var(--text-shadow);
+  }
+
+  .info-pelotas{
+    height: 860px;
+    width: 100%;
+  }
+
+  p{
+    margin-top: 10px;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 22px;
+  }
+/* slider de premios */
+  .mySlides2 {
+    display: none; 
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .slide-img2{ 
+      height: 120px;
+      width: auto;
+  }
+   
+  /* Slideshow container */
+  .slideshow-container2 {
+    position: relative;
+    margin: auto;
+    height: 160px;
+    width: 160px;
+  }
+  
+  /* botones*/
+  .prev2, .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 5px; 
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* boton siguiente*/
+  .next2 {
+    right: -10px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev2{
+    left:-10px;
+  }
+  
+  .dots2{
+      margin-top: -30px;
+  }
+  
+  /* puntos */
+  .dot2 {
+    position: relative;
+    display: inline-block; 
+    z-index: 100;
+    cursor: pointer;
+    height: 5px;
+    width: 5px;  
+    margin: 10px 5px 10px 5px;
+    background-color: #bbb;
+    border-radius: 50%; 
+    transition: background-color 0.6s ease;
+  }
+
+  .section-slider{
+    float: right;
+    height: fit-content;
+    margin-right: 30px;
+    margin-top: -160px;
+    width: 180px; 
+  }
+  
+  .active, .dot2:hover {
+    background-color: #717171;
   }
