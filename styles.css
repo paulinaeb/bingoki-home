@@ -378,14 +378,18 @@ header .icons{
 
   /* cruz de la suerte */
 
+  .large-row{
+    display: flex; 
+    justify-content: space-around;
+  }
   .cruz{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 240px;
+    width: 280px;
     height: fit-content;
-    margin-left: 60px;
-    margin-top: -35px;
+    /* margin-left: 60px; */
+    margin-top: -30px; 
     text-align: center;
   }
   .cruz-title{
@@ -428,3 +432,17 @@ header .icons{
     flex-direction: row;
     margin-top: -105px;
   }
+
+  .stream{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    background: var(--transparent-color);
+    box-shadow: var(--shadow);
+    width: 617px;
+    height: 300px;
+    text-align: center;
+    border-radius: 20px;
+  }
+ 
