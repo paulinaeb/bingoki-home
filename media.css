@@ -49,6 +49,13 @@
     .button-der{
         margin-left: 77%;
     }
+    .large-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cruz{
+        margin-top: 30px;
+    } 
 }
 @media only screen and (max-width: 911px) {
     header nav{
@@ -99,6 +106,27 @@
     .next, .prev{
         padding: 8px;
     }
+    .titles{
+        font-size: 2rem;
+    }
+    p, .number, .contador span{
+        font-size: 1.4rem;
+    }
+    .contador p{
+        height: 45px;
+        width: 45px;
+        font-size: 1rem;
+    }
+    .section-slider{
+        width: 150px;
+    }
+    .mySlides2{
+        height: 140px;
+        width: 140px;
+    }
+    .premios, .stream{
+        width: 440px;
+    }
 }
 @media only screen and (max-width: 671px) {
     nav ul li a{
@@ -132,6 +160,15 @@
     #img1{
         margin-right: -45px;
         height: 140px;
+    }
+    .titles{
+        font-size: 1.6rem;
+    }
+    .premios,.stream{
+        width: 400px;
+    }
+    p, .number, .contador span{
+        font-size: 1.3rem;
     }
 }
 @media only screen and (max-width: 425px) {
@@ -169,6 +206,33 @@
     .button-izq{
         margin-left: -75%;
         margin-top: 165px;
+    }
+    .titles{
+        font-size: 1.4rem;
+    }
+    .premios,.stream{
+        width: 300px;
+    }
+    p, .contador span{
+        font-size: 1rem;
+        line-height: 16px;
+    }
+    .stream{
+        height: 240px;
+    }
+    .mySlides2{
+        width: 100px;
+        height: 100px;
+    }  
+    .slideshow-container2{
+        width: 110px;
+        height: 110px;
+    }
+    .dots2{
+        margin-top: 15px;
+    }
+    .section-slider{
+        margin-right: 0px;
     }
   }
 /* slider text */

@@ -250,14 +250,17 @@ header .icons{
 
   /* section info premios, cruz, figura y stream */
   .info-bingo{
-    height: 590px;
+    height: fit-content;
     width: 100%;
     margin-top: 6.5px; 
     padding: 10px;
+    padding-bottom: 40px;
     background: linear-gradient(268.42deg, rgba(72, 1, 255, 0.73) 0%, rgba(33, 150, 243, 0.73) 99.99%, rgba(33, 150, 243, 0.73) 100%);
   }
 
   .premios{
+    display: flex;
+    justify-content: space-around;
     width: 617px;
     height: 176px;
     margin-left: auto;
@@ -305,7 +308,6 @@ header .icons{
     height: 160px;
     width: 160px;
     text-align: center;
-    overflow: hidden;
   }
   
   .slide-img2{ 
@@ -328,7 +330,7 @@ header .icons{
     top: 50%;
     width: auto;
     padding: 5px; 
-    color: rgb(0, 0, 0);
+    color: var(--black);
     font-weight: bold;
     font-size: 14px;
     transition: 0.6s ease;
@@ -368,7 +370,7 @@ header .icons{
     float: right;
     height: fit-content;
     margin-right: 30px;
-    margin-top: -160px;
+    margin-top: 15px;
     width: 180px; 
   }
   
@@ -387,8 +389,7 @@ header .icons{
     flex-direction: column;
     align-items: center;
     width: 280px;
-    height: fit-content;
-    /* margin-left: 60px; */
+    height: fit-content; 
     margin-top: -30px; 
     text-align: center;
   }
@@ -441,8 +442,51 @@ header .icons{
     background: var(--transparent-color);
     box-shadow: var(--shadow);
     width: 617px;
-    height: 300px;
+    height: 285px;
     text-align: center;
     border-radius: 20px;
   }
- 
+
+ .contador{
+  display: flex;
+  justify-content: center; 
+ }
+
+ .contador p{ 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 15px;
+   margin-right: 15px;
+   width: 60px;
+   height: 60px;
+   font-size: 1.4rem;
+   color: #FFF;
+   background-color: var(--blue); 
+   border: 2px solid #FFFFFF;
+   border-radius: 5px; 
+ }
+
+ .contador span{ 
+   font-size: 1.8rem;
+ }
+
+ .figura-box{ 
+   flex-direction: row;
+   justify-content: space-evenly;
+ }
+
+ .figura-circle{
+   height: 30px;
+   width: 30px;
+   margin-bottom: 7px;
+   background-color: #FFF;
+ }
+
+ .columna-figura{
+   margin-top: 8px;
+ }
+
+ .colored-circle{
+   background-color: var(--yellow);
+ }
