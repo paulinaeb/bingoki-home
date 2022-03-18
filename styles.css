@@ -8,6 +8,7 @@
     --black: #000;
     --white: #FFF;
     --green: #78EEA0;
+    --gray: #e5e5e5;
     --transparent-color:rgba(0, 0, 0, 0.22);
     --shadow:0px 4px 4px rgba(0, 0, 0, 0.35);
     --text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -631,24 +632,54 @@ h3{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-left: 60px;
+  margin-left: 40px;
   margin-top: 60px;
 }
 
 .bingo-box{
   display: flex;
   flex-direction: row;
-  width: 800px;
-  height: 260px; 
+  width: fit-content;
+  padding: 10px;
+  height: 255px; 
   /* overflow-x: scroll; */
 }
 
 .animals-box{
-  height: 60px;
-  width: 500px;
+  height: 70px;
+  width: fit-content;
+  padding: 10px;
   /* overflow-x: scroll; */
 }
 
 .faltan-balls p{
   margin-top: 0px;
+}
+
+.bingo-col, .animal-ball{
+  margin:auto;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
+.pelotas-bingo{
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.animal-ball{ 
+  height: 50px;
+  width: 50px;
+}
+
+.animal-row{
+  display: flex;
+  flex-direction: row; 
+}
+
+.animals-img{
+  margin-top:3px;
+  height: 45px;
+  width: 45px;
 }
