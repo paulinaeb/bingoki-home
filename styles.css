@@ -11,6 +11,7 @@
     --transparent-color:rgba(0, 0, 0, 0.22);
     --shadow:0px 4px 4px rgba(0, 0, 0, 0.35);
     --text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --purple-blue:linear-gradient(180deg, rgba(72, 1, 255, 0.73) 0%, rgba(33, 150, 243, 0.73) 74.16%);;
 }
 
 *{
@@ -218,7 +219,7 @@ header .icons{
     transition: background-color 0.6s ease;
   }
   
-  .active, .dot:hover {
+  .active, .dot:hover, .dot2:hover, .dot3:hover {
     background-color: #717171;
   }
   
@@ -258,6 +259,12 @@ header .icons{
     background: linear-gradient(268.42deg, rgba(72, 1, 255, 0.73) 0%, rgba(33, 150, 243, 0.73) 99.99%, rgba(33, 150, 243, 0.73) 100%);
   }
 
+  .box{
+    background: var(--transparent-color);
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+  }
+
   .premios{
     display: flex;
     justify-content: space-around;
@@ -265,10 +272,7 @@ header .icons{
     height: 176px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 35px;
-    background: var(--transparent-color);
-    box-shadow: var(--shadow);
-    border-radius: 20px;
+    margin-top: 30px;
   }
 
   .texto-premios{
@@ -288,11 +292,6 @@ header .icons{
     line-height: 30px;
     color:#FFF;
     text-shadow: var(--text-shadow);
-  }
-
-  .info-pelotas{
-    height: 860px;
-    width: 100%;
   }
 
   p{
@@ -373,10 +372,6 @@ header .icons{
     margin-top: 15px;
     width: 180px; 
   }
-  
-  .active, .dot2:hover {
-    background-color: #717171;
-  }
 
   /* cruz de la suerte */
 
@@ -403,10 +398,7 @@ header .icons{
     align-items: center;
     margin-top: 20px;
     width: 217px;
-    height: 197px;
-    background: var(--transparent-color);
-    box-shadow: var(--shadow);
-    border-radius: 20px;
+    height: 197px; 
   }
 
   .number{ 
@@ -438,13 +430,10 @@ header .icons{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 30px;
-    background: var(--transparent-color);
-    box-shadow: var(--shadow);
+    margin-top: 30px; 
     width: 617px;
     height: 285px;
-    text-align: center;
-    border-radius: 20px;
+    text-align: center; 
   }
 
  .contador{
@@ -490,3 +479,176 @@ header .icons{
  .colored-circle{
    background-color: var(--yellow);
  }
+
+ /* seccion 3 - pelotas y premios */
+ .info-pelotas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  margin: auto; 
+  height: 610px;
+  width: 100%;
+}
+
+.triangulo{ 
+  position: absolute; 
+  width: 900px;
+  height: 610px;
+  margin-left: -450px;
+  background: linear-gradient(180deg, rgba(72, 1, 255, 0.73) 0%, rgba(33, 150, 243, 0.73) 74.16%); 
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.elements{
+  display: flex;
+  justify-content: space-around;
+}
+
+.conocer-premios{
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  margin-top: 80px;
+}
+
+h3{
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 27px;
+}
+
+.text-box{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.conocer-premios p{ 
+  margin-top: 0px;
+}
+
+.primer-juego{
+  margin-top: 15px;
+}
+/* carousel 3 */
+.slider-3{
+  width: 220px;
+  height: 220px;
+  margin-top:10px;
+  margin-bottom: 15px;
+}
+
+.mySlides3{
+  display: none; 
+  height: 220px;
+  width: 220px;
+  text-align: center;
+  overflow: visible;
+}
+
+.slide-img3{ 
+    height: 180px;
+    width: auto;
+}
+ 
+/* Slideshow container */
+.slideshow-container3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  height: 220px;
+  width: 220px;
+}
+
+/* boton sig*/
+.next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 5px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  right: 10px;
+  border-radius: 3px 0 0 3px;
+}
+ 
+.dots3{
+    margin-top: -40px;
+}
+
+/* puntos */
+.dot3 {
+  position: relative;
+  display: inline-block; 
+  z-index: 100;
+  cursor: pointer;
+  height: 5px;
+  width: 5px;  
+  margin: 10px 5px 10px 5px;
+  background-color: #bbb;
+  border-radius: 50%; 
+  transition: background-color 0.6s ease;
+}
+
+.nombre-premio{
+  position: relative; 
+  margin: auto;
+  margin-top: 40px;
+}
+
+.decorativo{ 
+  position: absolute;
+  height: 70px;
+  width: 270px;
+  background-image: url(./assets/bingo-decorativo.png);
+  background-position: center;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: -480px;
+  margin-left: -255px;
+}
+ 
+.num-table{
+  height: 520px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.bingo-box{
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  height: 260px; 
+  /* overflow-x: scroll; */
+}
+
+.animals-box{
+  height: 60px;
+  width: 500px;
+  /* overflow-x: scroll; */
+}
+
+.faltan-balls p{
+  margin-top: 0px;
+}
