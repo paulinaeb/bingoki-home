@@ -844,7 +844,7 @@ h3 {
 }
 .animal-tabla{
   position: absolute;
-  margin-top: -20px;
+  margin-top: -30px;
   margin-left: -13px;
   height: 40px;
   width: auto;
@@ -852,7 +852,7 @@ h3 {
 .colored-number{
   background: rgba(255, 100, 100, 0.72);
   border-radius: 50px;
-  padding: 5px;
+  padding: 2px;
 }
 .col-numeros{
   display: flex;
