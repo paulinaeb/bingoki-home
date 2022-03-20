@@ -121,6 +121,45 @@
     font-size: 1.4rem;
     line-height: 29px;
   }
+  /* section 4 */
+  .card > img{
+    width: 20em;
+  }
+  .tabla-numeros{
+    margin-top: -200px;
+    width: 20em;
+    height: 20em;
+  }
+  .wrapper{
+    width: 63em;
+  }
+  .card > .content{
+    padding: 0.1em;
+  }
+  .card > .content > h3 {
+    margin: 0.1em 0;
+    font-size: 1.4rem;
+  }
+  .animal-tabla{
+    margin-top: -26px;
+    margin-left: -8px;
+    height: 30px;
+  }
+  .section-info p{
+    font-size: 1.6rem;
+  }
+  .info-circle{
+    border-radius: 200px;
+    padding: 10px;
+  }
+  .info-juego{
+    height: 980px;
+  }
+  .polygon{
+    border: 490px solid var(--solid-purple);
+    border-left: 490px solid transparent;
+    border-top: 490px solid transparent;
+  }
 }
 @media only screen and (max-width: 911px) {
   header nav {
@@ -196,6 +235,9 @@
   .stream {
     width: 440px;
   }
+  .tabla-numeros p{
+    font-size: 1.6rem;
+  }
 }
 @media only screen and (max-width: 740px) {
   .bingo-box,
@@ -240,6 +282,64 @@
   header .icons {
     height: 25px;
   }
+  /* section 4 */
+  .card > img{
+    width: 11em;
+  }
+  .tabla-numeros{
+    margin-top: -110px;
+    width: 11em;
+    height: 11em;
+  }
+  .wrapper{
+    width: 33.5em;
+  }
+  .wrapper > .inner{
+    grid-gap: 0.2em;
+  }
+  .card > .content > h3 { 
+    font-size: 1rem;
+    margin: 0;
+  }
+  .card > .content {
+    padding: 0em;
+}
+.tabla-numeros p{
+  font-size: 0.97rem;
+}
+.colored-number{
+  padding: 0;
+}
+.animal-tabla {
+  margin-top: -17px;
+  margin-left: -4px;
+  height: 18px;
+}
+.section-info p{
+  font-size: 1.4rem;
+}
+.animal-ganador{
+  height: 40px;
+}
+.info-circle {
+  border-radius: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+.info-animal{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.info-juego {
+  height: 750px;
+}
+.polygon {
+  border: 380px solid var(--solid-purple);
+  border-left: 380px solid transparent;
+  border-top: 380px solid transparent;
+}
 }
 @media only screen and (max-width: 604px) {
   nav ul {
