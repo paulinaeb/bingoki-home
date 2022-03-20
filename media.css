@@ -83,6 +83,25 @@
     border-left: 580px solid transparent;
     border-top: 580px solid transparent;
   }
+  /* section 5 */
+  .section-ganadores{
+    height: 1250px;
+  }
+  .ganadores-container{
+    justify-content: space-around;
+    height: 92%;
+  }
+  .row-info-ganadores{
+    flex-direction: column;
+    height: 960px;
+  }
+  .row-cruz{
+    justify-content: center;
+  }
+  .num-cruz{
+    margin-left: 3px;
+    margin-right: 3px;
+  }
 }
 @media only screen and (max-width: 944px) {
   .num-table {
@@ -235,10 +254,31 @@
   .stream {
     width: 440px;
   }
-  .tabla-numeros p{
+  .tabla-numeros p, .row-info-ganadores p{
     font-size: 1.6rem;
+  } 
+  .info-ganador p{
+    font-size: 1.4rem;
+  }
+  .section-ganadores {
+    height: 1200px;
+}
+}
+
+@media only screen and (max-width: 861px) {
+  .section-ganadores {
+    height: 1200px;
+  }
+  .options ul li a{
+    padding: 3px;
+    font-size: 1.4rem;
+  }
+  .winner-column .bingo-box{
+    width: 550px;
+    overflow-x: scroll;
   }
 }
+
 @media only screen and (max-width: 740px) {
   .bingo-box,
   .animals-box {
@@ -340,6 +380,36 @@
   border-left: 380px solid transparent;
   border-top: 380px solid transparent;
 }
+.options{
+  flex-direction: column;
+  align-items: center;
+}
+.options ul{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.winner-column .bingo-box {
+  width: 370px;
+}
+.winner-column .tabla-numeros p, .row-info-ganadores p{
+  font-size: 1.4rem;
+} 
+.info-ganador p{
+  font-size: 1.2rem;
+}
+.section-ganadores {
+  height: 1180px;
+}
+.red-social img{
+  height: 20px;
+  margin: 3px;
+}
+.red-social{ 
+  margin: 7px;
+}
+#fb {
+  height: 26px;
+}
 }
 @media only screen and (max-width: 604px) {
   nav ul {
@@ -377,6 +447,10 @@
   .number,
   .contador span {
     font-size: 1.3rem;
+  }
+  .options{
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -493,6 +567,48 @@
   }
   .text-box {
     padding: 4px;
+  }
+  .options ul li a {
+    padding: 2px;
+    font-size: 1.2rem;
+  }
+  .winner-column .card img {
+    width: 16em;
+  }
+  .winner-column .tabla-numeros {
+    margin-top: -160px;
+    width: 16em;
+    height: 16em;
+  } 
+  .winner-column .card p, .row-info-ganadores p{
+    font-size: 1.3rem;
+  }
+  .winner-column .bingo-box {
+    width: 260px;
+  }
+  .winner-column .bingo-col {
+    margin-left: 2px;
+  }
+  .num-sorteado { 
+    width: 25px;
+    height: 25px; 
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .info-ganador p {
+    font-size: 1.1rem;
+  }
+  .row-info-ganadores { 
+    height: 820px;
+  }
+  .section-ganadores {
+    height: 1040px;
+  }
+  .red-social{ 
+    margin: 4px;
   }
 }
 /* slider text */
