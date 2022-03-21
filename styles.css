@@ -42,6 +42,13 @@ header {
   justify-content: center;
   background: var(--soft-purple);
 }
+a{
+  text-decoration: none;
+}
+
+a h3{
+  color: #000;
+}
 
 nav ul {
   list-style: none;
@@ -63,9 +70,11 @@ nav ul li a {
   padding: 15px 15px;
   font-weight: 600;
   font-size: 1.8rem;
-  line-height: 22px;
-  text-decoration: none;
+  line-height: 22px; 
   color: var(--white);
+}
+nav ul li a:hover{
+  text-decoration: underline;
 }
 
 header a,
@@ -1078,11 +1087,22 @@ h3 {
 }
 footer{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 120px;
+  background-color: var(--soft-blue);
+}
+.info-redes{
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  background-color: var(--soft-blue);
+}
+footer img{
+  margin-top: -20px;
+  height: 42px;
+  width: 65px;
 }
 .red-social{
   display: flex;
